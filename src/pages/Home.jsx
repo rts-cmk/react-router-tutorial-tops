@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom"
+
 export default function Home() {
     return (
         <div>
             <h1>Intro Page</h1>
             <p>React Router Tutorial
-
-                React Router is a react routing libary, that lets you create client-side routes, and be able to navigate throug the website without reloading the page
+                <br />
+                React Router is a react libary, that lets you create client-side routes, and be able to navigate throug the website without reloading the page
 
                 <br />
                 <br />
 
 
-                ### 1. Create the Project
+                1. Create the Project
                 <br />
-                1. Create a folder o you computer
+                2. Create a folder o you computer
                 <br />
-                2. Open code editor and open the terminal
+                3. Open code editor and open the terminal
                 <br />
 
                 Terminal:
@@ -33,14 +35,6 @@ export default function Home() {
                 Terminal:
                 <br />
                 npm run dev
-
-                <br />
-                <br />
-                Run the Site 
-                <br />
-                Terminal:
-                npm run dev
-                
             </p>
 
             <pre>
@@ -58,9 +52,7 @@ export default function Home() {
                     `}
                 </code>
             </pre>
-
-            
-
+            <Link to="/routes-pages">Go to next page</Link>
         </div>
     )
 }

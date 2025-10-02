@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function RoutesPages() {
     return (
         <div>
@@ -29,9 +31,9 @@ export default function RoutesPages() {
                             <Route path='*' element={<NotFound />} />
                         </Routes>
                     `}
-
                     </code>
                 </pre>
+                <Link to="/UseNavigateInfo">Go to next page</Link>
             </div>
     )
 }

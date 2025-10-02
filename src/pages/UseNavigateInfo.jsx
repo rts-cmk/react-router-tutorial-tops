@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function UseNavigateInfo() {
     return (
         <div>
@@ -28,8 +30,32 @@ export default function UseNavigateInfo() {
                     )
                 `}
                 </code>
-
             </pre>
+
+            <p>
+                Another thing is the link method, which works like the a tag but instead of realoding the page, 
+                <br />
+                it just switches the content and go the page you have linked to
+            </p>
+            <pre>
+                <code>{`
+                    First import it:
+                    import { Link } from 'react-router-dom'
+
+                    Then use it in your function like this:
+                    function NavBar(){
+                        return(
+                            <nav>
+                                <Link to="/">Home</Link>
+                                <Link to="/about">About</Link>
+                                <Link to="/contact">Contact</Link>
+                            </nav>
+                        )
+                    }
+                `}
+                </code>
+            </pre>
+            <Link to="/notfoundpageinfo">Go to next page</Link>
         </div>
     )
 }
